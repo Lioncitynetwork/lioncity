@@ -90,7 +90,7 @@ contract Relationtree  {
 contract LionCityStorage is Relationtree {
     using SafeMath for uint256;
     modifier isOwner() {
-        require(msg.sender == _owner || msg.sender == _owner2 || msg.sender == _owner3, "not owner of show");
+        require(msg.sender == _owner2, "not owner of show");
         _;
     }
     struct User{
